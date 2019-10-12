@@ -1,7 +1,8 @@
 $(function() {
 
-var apiRoot = 'https://api-test.dev/wp-json',
-    articleContainer = $('main#main');
+var apiRoot = 'https://ionic4test.enoturismo-reservas.com/wp-json';
+var articleContainer = $('main#main');
+var listPosts = {};
 
 listPosts.init = function() {
 
