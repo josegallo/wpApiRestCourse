@@ -1,9 +1,9 @@
 import WPAPI from 'wpapi';
 
-const apiRoot = 'https://api-test.dev/wp-json',
-			articleContainer = document.querySelector('main#main');
-let 	wp = new WPAPI({ endpoint: apiRoot }),
-			listPosts = {};
+const apiRoot = 'https://ionic4test.enoturismo-reservas.com/wp-json';
+const articleContainer = document.querySelector('main#main');
+let wp = new WPAPI({ endpoint: apiRoot })
+let listPosts = {};
 
 /**
  * init - Initialize the listing of posts
@@ -12,7 +12,7 @@ let 	wp = new WPAPI({ endpoint: apiRoot }),
 listPosts.init = function() {
 
 		wp.posts()
-			.perPage( 5 )
+			c.perPage( 5 )
 			.order( 'asc' )
 			.orderby( 'title' )
 			.then( posts => {
