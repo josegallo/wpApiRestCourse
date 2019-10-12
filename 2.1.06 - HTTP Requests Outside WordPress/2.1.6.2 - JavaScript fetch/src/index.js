@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-const apiRoot = 'https://api-test.dev/wp-json',
+const apiRoot = 'https://ionic4test.enoturismo-reservas.com/wp-json',
 			articleContainer = document.querySelector('main#main');
 let listPosts = {};
 
