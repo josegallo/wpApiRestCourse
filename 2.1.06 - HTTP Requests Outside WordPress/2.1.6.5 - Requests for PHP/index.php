@@ -5,8 +5,10 @@
 	// Setup request to a WP site
 	$response = Requests::get('https://ionic4test.enoturismo-reservas.com/wp-json/wp/v2/posts/?per_page=5');
 	// Convert JSON to PHP Array
-	$posts = json_decode($response->body, true)
+	// $posts = json_decode($response, true)
+	$posts = json_decode($response->body, true);
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
